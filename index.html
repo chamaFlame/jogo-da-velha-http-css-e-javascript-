@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "icon" href = "imagens/icone.png">
+    <link rel = "stylesheet" href = "estilo.css">
+    <title>jogo da velha online</title>
+    <script type = "text/javascript" src = "acoes.js" ></script>
+    <audio id = 'somBotao2' src = 'sons/button2.mp3' type="audio/mpeg"></audio>
+    <audio id = 'somBotao1' src = 'sons/button1.mp3' type="audio/mpeg"></audio>
+    <audio id = 'somOhNo' src = 'sons/oh no.mp3' type="audio/mpeg"></audio>
+    <audio id = 'somOhYes' src = 'sons/oh yes.mp3' type="audio/mpeg"></audio>
+    <audio id = 'somTimeToDuel' src = 'sons/time to duel.mp3' type="audio/mpeg"></audio>
+    <audio id = 'somThiscantbe' src = 'sons/this cant be.mp3' type="audio/mpeg"></audio>
+</head>
+<body>
+    <img id = 'hashtag' src = 'imagens/hashtag.png' hidden = true>
+    <p class = 'simbolos simboloXis linhaUm colunaUm' id = "simboloXisPosicaoUm" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaUm colunaUm' id = "simboloBolinhaPosicaoUm" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaUm colunaDois' id = "simboloXisPosicaoDois" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaUm colunaDois' id = "simboloBolinhaPosicaoDois" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaUm colunaTres'id = "simboloXisPosicaoTres" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaUm colunaTres' id = "simboloBolinhaPosicaoTres" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaDois colunaUm' id = "simboloXisPosicaoQuatro" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaDois colunaUm' id = "simboloBolinhaPosicaoQuatro" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaDois colunaDois' id = "simboloXisPosicaoCinco" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaDois colunaDois' id = "simboloBolinhaPosicaoCinco" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaDois colunaTres' id = "simboloXisPosicaoSeis" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaDois colunaTres' id = "simboloBolinhaPosicaoSeis" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaTres colunaUm' id = "simboloXisPosicaoSete" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaTres colunaUm' id = "simboloBolinhaPosicaoSete" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaTres colunaDois' id = "simboloXisPosicaoOito" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaTres colunaDois' id = "simboloBolinhaPosicaoOito" hidden = true>o</p>
+    <p class = 'simbolos simboloXis linhaTres colunaTres' id = "simboloXisPosicaoNove" hidden = true>x</p>
+    <p class = 'simbolos simboloBolinha linhaTres colunaTres' id = "simboloBolinhaPosicaoNove" hidden = true>o</p>
+    <button type = "button" class = "botoes botoesLinhaUm botoesColunaUm" id = "botaoPosicaoUm" hidden = true onclick = "escolherPosicao(1), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaUm botoesColunaDois" id = "botaoPosicaoDois" hidden = true onclick = "escolherPosicao(2), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaUm botoesColunaTres" id = "botaoPosicaoTres" hidden = true onclick = "escolherPosicao(3), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaDois botoesColunaUm" id = "botaoPosicaoQuatro" hidden = true onclick = "escolherPosicao(4), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaDois botoesColunaDois" id = "botaoPosicaoCinco" hidden = true onclick = "escolherPosicao(5), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaDois botoesColunaTres" id = "botaoPosicaoSeis" hidden = true onclick = "escolherPosicao(6), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaTres botoesColunaUm" id = "botaoPosicaoSete" hidden = true onclick = "escolherPosicao(7), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaTres botoesColunaDois" id = "botaoPosicaoOito" hidden = true onclick = "escolherPosicao(8), checarVitoria()"></button>
+    <button type = "button" class = "botoes botoesLinhaTres botoesColunaTres" id = "botaoPosicaoNove" hidden = true onclick = "escolherPosicao(9), checarVitoria()"></button>
+    <button type = "button" class = "botoesColunaUm" id = "botaoXis" onclick="fazerEscolha('x')">x</button>
+    <button type = "button" class = "botoesColunaTres" id = "botaoBolinha" onclick="fazerEscolha('o')">o</button>
+    <h1 id = "textoEscolha">ESCOLHA</h1>
+    <button type = 'button' id = 'botaoJogarNovamente' onclick = 'window.location.reload()' hidden = true>Jogar Denovo</button>
+</body>
+</html>
