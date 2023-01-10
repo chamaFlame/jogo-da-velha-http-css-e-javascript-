@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+#hashtag{
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 370px
+}
+.simbolos{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    position: absolute;
+}
+.simboloXis{
+    color: red;
+}
+.simboloBolinha{
+    color:blue;
+}
+.botoes{
+    background-color: black;
+    border-style: solid;
+    border-color:white;
+    width:80px;
+    height:80px;
+    position: absolute;
+}
+.botoes:active{
+    transform: translateY(4px);
+}
+.linhaUm{
+    top: -70px;
+}
+.linhaDois{
+    top: 65px;
+}
+.linhaTres{
+    top: 200px;
+}
+.colunaUm{
+    left: 400px
+}
+.colunaDois{
+    left: 575px
+}
+.colunaTres{
+    left: 750px
+}
+.botoesLinhaUm{
+    top:130px;
+}
+.botoesLinhaDois{
+    top:266px;
+}
+.botoesLinhaTres{
+    top:407px;
+}
+.botoesColunaUm{
+    left:405px;
+}
+.botoesColunaDois{
+    left:580px;
+}
+.botoesColunaTres{
+    left:755px;
+}
+#botaoXis{
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    background-color: black;
+    border-style: solid;
+    border-color:white;
+    position: absolute;
+}
+#botaoBolinha{
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    background-color: black;
+    border-style: solid;
+    border-color:white;
+    position: absolute;
+}
+#textoEscolha{
+    color:rgb(4, 243, 4);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    left:450px;
+    top:-60px;
+}
+#botaoXis{
+    top:200px;
+}
+#botaoBolinha{
+    top:200px;
+}
+#botaoJogarNovamente{
+    color:black;
+    background-color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:35px;
+    position: absolute;
+    left:510px;
+    top:550px;
+}
+#botaoJogarNovamente:active{
+    transform: translateY(4px);
+}
